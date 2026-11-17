@@ -1,0 +1,185 @@
+# Claude / Anthropic — Net.Coffee 全量 Surge 规则
+# Source: https://ip.net.coffee/claude/site.html
+# Generated: 2026-11-17T22:05:13+08:00
+# Geosite: v2fly/domain-list-community @ 41504eae2a11f305fe88cfc605cf6c105a80bf5a
+# 合并网页正文、复制块和分类兜底；精确重复项已去重。
+# api/cdn/mcp/console/workbench.anthropic.com 已由 anthropic.com 后缀规则覆盖。
+# 全 NTP 分类和监控关键词会同时影响其他应用。
+# RULE-SET 文件，不包含策略名称。
+# Import: RULE-SET,https://raw.githubusercontent.com/zyshawn/rule/main/claude.list,CLAUDE,no-resolve
+# 将 CLAUDE 替换为实际节点或策略组名称。
+
+# 核心域名
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN-SUFFIX,claudeusercontent.com
+
+# CDN 与基础设施
+DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN,anthropic.com.cdn.cloudflare.net
+
+# 认证与内容
+DOMAIN,anthropic.auth0.com
+DOMAIN,anthropic-com.ghost.io
+
+# KYC：补齐正文中存在但复制块遗漏的三项
+DOMAIN,maps.googleapis.com
+DOMAIN-SUFFIX,withpersona.com
+DOMAIN-SUFFIX,frompersona.com
+
+# 监控域名
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN,browser-intake-us5-datadoghq.com
+
+# 客服与第三方组件
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN,cdn.usefathom.com
+
+# geosite:anthropic 展开；来源与固定版本见文件头
+DOMAIN-SUFFIX,ant.dev
+DOMAIN-SUFFIX,anthropic.team
+DOMAIN-SUFFIX,antspace.dev
+DOMAIN-SUFFIX,chatbotclaude.com
+DOMAIN-SUFFIX,claude.app
+DOMAIN-SUFFIX,claude.dev
+DOMAIN-SUFFIX,claude.new
+DOMAIN-SUFFIX,claude.site
+DOMAIN-SUFFIX,claudeacademy.com
+DOMAIN-SUFFIX,claudepages.dev
+DOMAIN-SUFFIX,claudestudio.com
+DOMAIN,http-intake.logs.us5.datadoghq.com
+DOMAIN,o1158394.ingest.us.sentry.io
+
+# geosite:category-ntp 展开，包含 CN / JP 子分类；需节点支持 UDP
+DOMAIN,ntp.aliyun.com
+DOMAIN,ntp1.aliyun.com
+DOMAIN,ntp2.aliyun.com
+DOMAIN,ntp3.aliyun.com
+DOMAIN,ntp4.aliyun.com
+DOMAIN,ntp5.aliyun.com
+DOMAIN,ntp6.aliyun.com
+DOMAIN,ntp7.aliyun.com
+DOMAIN,time.amazonaws.cn
+DOMAIN,time.izatcloud.net
+DOMAIN,time.xtracloud.net
+DOMAIN,izattime.qcomgeo2.com
+DOMAIN,xtratime.qcomgeo2.com
+DOMAIN,ntp.tencent.com
+DOMAIN,ntp1.tencent.com
+DOMAIN,ntp2.tencent.com
+DOMAIN,ntp3.tencent.com
+DOMAIN,ntp4.tencent.com
+DOMAIN,ntp5.tencent.com
+DOMAIN-SUFFIX,cn.pool.ntp.org
+DOMAIN-SUFFIX,ntp.neu.edu.cn
+DOMAIN-SUFFIX,ntp.ntsc.ac.cn
+DOMAIN-SUFFIX,ntp.org.cn
+DOMAIN-SUFFIX,ats1.e-timing.ne.jp
+DOMAIN-SUFFIX,ntp.jst.mfeed.ad.jp
+DOMAIN-SUFFIX,ntp1.jst.mfeed.ad.jp
+DOMAIN-SUFFIX,ntp2.jst.mfeed.ad.jp
+DOMAIN-SUFFIX,ntp3.jst.mfeed.ad.jp
+DOMAIN-SUFFIX,ntp1.v6.mfeed.ad.jp
+DOMAIN-SUFFIX,ntp2.v6.mfeed.ad.jp
+DOMAIN-SUFFIX,ntp3.v6.mfeed.ad.jp
+DOMAIN-SUFFIX,s2csntp.miz.nao.ac.jp
+DOMAIN-SUFFIX,ntp.nict.jp
+DOMAIN-SUFFIX,ntp-tk01.ocn.ad.jp
+DOMAIN-SUFFIX,ntp-tk02.ocn.ad.jp
+DOMAIN-SUFFIX,ntp-os01.ocn.ad.jp
+DOMAIN-SUFFIX,ntp1.plala.or.jp
+DOMAIN-SUFFIX,ntp2.plala.or.jp
+DOMAIN-SUFFIX,ntp.ring.gr.jp
+DOMAIN-SUFFIX,ntp0.ring.gr.jp
+DOMAIN-SUFFIX,ntp1.ring.gr.jp
+DOMAIN-SUFFIX,ntp2.ring.gr.jp
+DOMAIN-SUFFIX,ntp.t.ring.gr.jp
+DOMAIN-SUFFIX,ntp.dnsbalance.ring.gr.jp
+DOMAIN-SUFFIX,ntp.nc.u-tokyo.ac.jp
+DOMAIN-SUFFIX,ntp.tohoku.ac.jp
+DOMAIN-SUFFIX,ntp1.tohoku.ac.jp
+DOMAIN-SUFFIX,ntp2.tohoku.ac.jp
+DOMAIN-SUFFIX,ntp.tut.ac.jp
+DOMAIN-SUFFIX,ntp1.wakwak.com
+DOMAIN-SUFFIX,ntp2.wakwak.com
+DOMAIN,time.apple.com
+DOMAIN,time.asia.apple.com
+DOMAIN,time.euro.apple.com
+DOMAIN,time.aws.com
+DOMAIN,time.cloudflare.com
+DOMAIN,time.facebook.com
+DOMAIN,time1.facebook.com
+DOMAIN,time2.facebook.com
+DOMAIN,time3.facebook.com
+DOMAIN,time4.facebook.com
+DOMAIN,time5.facebook.com
+DOMAIN,time.google.com
+DOMAIN,time1.google.com
+DOMAIN,time2.google.com
+DOMAIN,time3.google.com
+DOMAIN,time4.google.com
+DOMAIN,ntp.ubuntu.com
+DOMAIN,time.windows.com
+DOMAIN,ut1-wwv.nist.gov
+DOMAIN,ntp-b.nist.gov
+DOMAIN,ntp-d.nist.gov
+DOMAIN,ntp-wwv.nist.gov
+DOMAIN,time.nist.gov
+DOMAIN,time-a-g.nist.gov
+DOMAIN,time-b-g.nist.gov
+DOMAIN,time-c-g.nist.gov
+DOMAIN,time-d-g.nist.gov
+DOMAIN,time-e-g.nist.gov
+DOMAIN,time-a-b.nist.gov
+DOMAIN,time-b-b.nist.gov
+DOMAIN,time-c-b.nist.gov
+DOMAIN,time-d-b.nist.gov
+DOMAIN,time-e-b.nist.gov
+DOMAIN,time-a-wwv.nist.gov
+DOMAIN,time-b-wwv.nist.gov
+DOMAIN,time-c-wwv.nist.gov
+DOMAIN,time-d-wwv.nist.gov
+DOMAIN,time-e-wwv.nist.gov
+DOMAIN,ntp-c.colorado.edu
+DOMAIN,ut1-time.colorado.edu
+DOMAIN,utcnist.colorado.edu
+DOMAIN,utcnist2.colorado.edu
+DOMAIN,utcnist3.colorado.edu
+DOMAIN,ntp0.ntp-servers.net
+DOMAIN,ntp1.ntp-servers.net
+DOMAIN,ntp2.ntp-servers.net
+DOMAIN,ntp3.ntp-servers.net
+DOMAIN,ntp4.ntp-servers.net
+DOMAIN,ntp5.ntp-servers.net
+DOMAIN,ntp6.ntp-servers.net
+DOMAIN,ntp7.ntp-servers.net
+DOMAIN,ntp.time.nl
+DOMAIN,ntp1.time.nl
+DOMAIN,ntp2.time.nl
+DOMAIN,ntppool1.time.nl
+DOMAIN,ntppool2.time.nl
+DOMAIN-SUFFIX,clock.isc.org
+DOMAIN-SUFFIX,ntp.fiord.ru
+DOMAIN-SUFFIX,ntp.nat.ms
+DOMAIN-SUFFIX,ntp.nic.cz
+DOMAIN-SUFFIX,ntp.ripe.net
+DOMAIN-SUFFIX,ntp.se
+DOMAIN-SUFFIX,ntp.ufe.cz
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,time.nrc.ca
+
+# 关键词兜底：也会影响其他应用的同类监控流量
+DOMAIN-KEYWORD,datadog
+DOMAIN-KEYWORD,sentry
+DOMAIN-KEYWORD,sift
+
+# IPv4 / IPv6 / ASN 兜底
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR6,2607:6bc0::/32,no-resolve
+IP-ASN,399358,no-resolve
